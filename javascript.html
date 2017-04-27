@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Pick a number between 1 and 10</h1>
+
+<input type="text" id="num" />
+
+<button type="button" onclick='myFunction()'>Click Me!</button>
+<p id="demo"></p>
+<script> 
+function myFunction(){
+                      var num, within;
+					  num = document.getElementById("num").value;
+					  if (num > 10) { 
+					      within = "too high";}
+					  else {within = "within range";}
+					  document.getElementById("demo").innerHTML = within;
+					  }
+</script>
+
+</body>
+</html>

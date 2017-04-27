@@ -1,0 +1,55 @@
+<!doctype html>
+<html> 
+<head> 
+<title>program 2
+</title></head>
+<body>
+<h1>Pick a number between 1 and 10</h1>
+
+<input type="text" id="num" />
+
+<button type="button" onclick="myFunction()"> Click Me! </button>
+<p id="demo"></p>
+<script>
+      function myFunction(){
+	         var text;
+			var num = document.getElementById("num").value; console.log(num)  
+              switch(num){ 
+					    case "1":
+						text = "first number, its pretty small";
+						break;
+						case "2":
+						text = "second number, juts a bit bigger than the first";
+						break;
+						case "3":
+						text = "cant you try something a bit higher";
+						break;
+						case "4":
+						text = "youre getting there";
+						break;
+						case "5":
+						text = "mid point, you can go even higher than that";
+						break;
+						case "6":
+						text = "good work, now go higher";
+						break;
+						case "7":
+						text = "pretty nice work";
+						break;
+						case "8":
+						text = "doing specatcular"; 
+						break;
+						case "9":
+						text = "great but dont go over board";
+						break;
+						case "10":
+						text = "youre at the boundary not, i know what you're thinking, don't!";
+						break;
+						default:
+						text= "not within the specified range"}
+						document.getElementById("demo").innerHTML = text;
+					
+                                     }
+</script>						
+</body>
+</html>
